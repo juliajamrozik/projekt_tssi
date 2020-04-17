@@ -5,8 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Projekt Julii</title>
+    <link rel="stylesheet" href="glowna.css" />
 </head>
 <body>
-    <h1>Witam na stronie, poświęconej ciekawostkom!</h1>
+     <div class="container">
+        <div id="home" class="flex-center flex-column">
+     <script src="glowna.js"></script>
+     <h1>Kalkulator</h1> <br>
+     <form id="calculator">
+         <br>
+         <h2>Wpisz wybrane przez siebie liczby, a następnie wybierz co chcesz z nimi zrobić!</h2>
+         <br>
+         <br>
+        <input type="text" id="a" placeholder="a" />
+        <input type="text" id="b" placeholder="b" />
+        <input type="text" id="result" placeholder="=" disabled="disabled" /> <br>
+        <br>
+        <button type="button" onclick="Calculator(this.innerHTML)">+</button> 
+        <button type="button" onclick="Calculator(this.innerHTML)">-</button>
+        <button type="button" onclick="Calculator(this.innerHTML)">x</button>   
+        <button type="button" onclick="Calculator(this.innerHTML)">/</button> 
+    </form>
 </body>
 </html>
